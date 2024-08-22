@@ -16,13 +16,17 @@ function App() {
   const [isClicked, setIsClicked] = useState(false);
   const taskItemList = useRef(null);
   // Using useRef instead of using DOM (querySelector or getElement)
+  
   let currentTask = useRef(null);
   // Adding permission to move tasks among columns
+  
   const [movePerm, setMovePerm] = useState(false);
   const [chosenColumn, setChosenColumn] = useState(null);
   // Getting the displayed task's info
+  
   const [thisTask, setThisTask] = useState({});
   const [popup, setPopup] = useState(false);
+  
   // Edit tasks
   const [edit, setEdit] = useState(false);
   const [editedTitle, setEditedTitle] = useState('');
